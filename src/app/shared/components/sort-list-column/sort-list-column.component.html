@@ -1,0 +1,14 @@
+<ng-content></ng-content>
+
+<img
+  src="assets/icons/sort-up.svg"
+  alt="sort-up"
+  class="icon-size"
+  *ngIf="sortMode === sortModeAsc"
+/>
+<img
+  src="assets/icons/sort-down.svg"
+  alt="sort-down"
+  class="icon-size"
+  *ngIf="sortMode === sortModeDesc"
+/>

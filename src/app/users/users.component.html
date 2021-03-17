@@ -1,0 +1,16 @@
+<div class="d-flex flex-row justify-content-between align-items-center">
+  <h3>Users</h3>
+
+  <app-users-list-search
+    (searchTerm)="searchUsers($event)"
+  ></app-users-list-search>
+</div>
+
+<div class="d-flex flex-row">
+  <div class="flex-grow-1 flex-fill">
+    <app-users-list
+      [users]="(users$ | async)!"
+      (sortByTerm)="sortColumn($event)"
+    ></app-users-list>
+  </div>
+</div>
