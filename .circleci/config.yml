@@ -2,8 +2,8 @@ version: 2.1
 
 jobs:
   # The test job
-  test:
-    working_directory: ~/project-name
+  build:
+    working_directory: ~/clickup-exercise
     docker:
       - image: circleci/node:10-browsers
     steps:
